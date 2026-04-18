@@ -1,0 +1,9 @@
+{
+  "id": "kla_018",
+  "equipment": "overlay metrology tool",
+  "topic": "yield excursion response",
+  "severity": "low",
+  "instruction": "Provide a KLA field-ready response for overlay metrology tool covering yield excursion response.",
+  "context": "Site=Fab-5, Shift=1, AlarmCode=KLA-1018, Severity=low.",
+  "response": "For overlay metrology tool, start with safety lockout and verify alarm KLA-1018. Then execute the standard yield excursion response checklist, capture before/after metrics, and escalate to tier-2 if recovery exceeds 30 minutes."
+}

@@ -1,0 +1,23 @@
+{
+  "threshold": 0.05,
+  "selected_experiment": "set_b",
+  "selected_model": "ft:gpt-4.1-mini:set_b",
+  "publish": true,
+  "reason": "Best delta=0.072 >= threshold=0.05.",
+  "ranking": [
+    {
+      "experiment": "set_b",
+      "dataset_version": "kla-v2",
+      "delta": 0.072,
+      "tuned_score": 0.682,
+      "baseline_score": 0.61
+    },
+    {
+      "experiment": "set_a",
+      "dataset_version": "kla-v1",
+      "delta": 0.041,
+      "tuned_score": 0.651,
+      "baseline_score": 0.61
+    }
+  ]
+}

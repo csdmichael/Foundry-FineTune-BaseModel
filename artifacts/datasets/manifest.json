@@ -1,0 +1,14 @@
+{
+  "datasets": [
+    {
+      "name": "set_a",
+      "dataset_version": "kla-v1",
+      "records": 50
+    },
+    {
+      "name": "set_b",
+      "dataset_version": "kla-v2",
+      "records": 50
+    }
+  ]
+}

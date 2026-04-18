@@ -1,0 +1,8 @@
+{
+  "name": "set_b",
+  "dataset_version": "kla-v2",
+  "description": "Operations + process control heavy dataset",
+  "train_blob": "datasets/set_b/train.jsonl",
+  "validation_blob": "datasets/set_b/validation.jsonl",
+  "evaluation_blob": "datasets/set_b/eval.jsonl"
+}

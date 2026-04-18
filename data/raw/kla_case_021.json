@@ -1,0 +1,9 @@
+{
+  "id": "kla_021",
+  "equipment": "reticle inspection platform",
+  "topic": "fault isolation",
+  "severity": "low",
+  "instruction": "Provide a KLA field-ready response for reticle inspection platform covering fault isolation.",
+  "context": "Site=Fab-1, Shift=1, AlarmCode=KLA-1021, Severity=low.",
+  "response": "For reticle inspection platform, start with safety lockout and verify alarm KLA-1021. Then execute the standard fault isolation checklist, capture before/after metrics, and escalate to tier-2 if recovery exceeds 30 minutes."
+}

@@ -1,0 +1,9 @@
+{
+  "id": "kla_059",
+  "equipment": "e-beam inspection module",
+  "topic": "operator handoff",
+  "severity": "high",
+  "instruction": "Provide a KLA field-ready response for e-beam inspection module covering operator handoff.",
+  "context": "Site=Fab-4, Shift=3, AlarmCode=KLA-1059, Severity=high.",
+  "response": "For e-beam inspection module, start with safety lockout and verify alarm KLA-1059. Then execute the standard operator handoff checklist, capture before/after metrics, and escalate to tier-2 if recovery exceeds 30 minutes."
+}
