@@ -3,12 +3,14 @@ from __future__ import annotations
 import os
 from pathlib import Path
 
+from azure.identity import DefaultAzureCredential
 from azure.storage.blob import BlobServiceClient
 
 
 def upload_folder(local_folder: Path, container_name: str, prefix: str = "") -> None:
-    connection_string = os.environ["AZURE_STORAGE_CONNECTION_STRING"]
-    service = BlobServiceClient.from_connection_string(connection_string)
+    account_url = os.environ["AZURE_STORAGE_ACCOUNT_URL"]
+    credential = DefaultAzureCredential()
+    service = BlobServiceClient(account_url=account_url, credential=credential)
     container = service.get_container_client(container_name)
 
     try:

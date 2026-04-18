@@ -7,6 +7,7 @@ import time
 from dataclasses import dataclass
 from pathlib import Path
 
+from azure.identity import DefaultAzureCredential, get_bearer_token_provider
 from azure.storage.blob import BlobServiceClient
 from openai import AzureOpenAI
 
@@ -47,11 +48,18 @@ def wait_for_job(client: AzureOpenAI, job_id: str, interval: int = 30) -> dict:
 def run_experiment(config_path: Path) -> dict:
     cfg = load_config(config_path)
     container = os.environ.get("AZURE_STORAGE_CONTAINER", "kla-finetune")
-    blob_service = BlobServiceClient.from_connection_string(os.environ["AZURE_STORAGE_CONNECTION_STRING"])
+    credential = DefaultAzureCredential()
+    blob_service = BlobServiceClient(
+        account_url=os.environ["AZURE_STORAGE_ACCOUNT_URL"],
+        credential=credential,
+    )
 
+    token_provider = get_bearer_token_provider(
+        credential, "https://cognitiveservices.azure.com/.default"
+    )
     client = AzureOpenAI(
         azure_endpoint=os.environ["AZURE_OPENAI_ENDPOINT"],
-        api_key=os.environ["AZURE_OPENAI_API_KEY"],
+        azure_ad_token_provider=token_provider,
         api_version=os.getenv("AZURE_OPENAI_API_VERSION", "2024-10-21"),
     )
 
