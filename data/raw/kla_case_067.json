@@ -1,0 +1,9 @@
+{
+  "id": "kla_067",
+  "equipment": "defect review station",
+  "topic": "process drift control",
+  "severity": "medium",
+  "instruction": "Provide a KLA field-ready response for defect review station covering process drift control.",
+  "context": "Site=Fab-5, Shift=2, AlarmCode=KLA-1067, Severity=medium.",
+  "response": "For defect review station, start with safety lockout and verify alarm KLA-1067. Then execute the standard process drift control checklist, capture before/after metrics, and escalate to tier-2 if recovery exceeds 30 minutes."
+}

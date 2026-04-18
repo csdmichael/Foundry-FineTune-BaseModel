@@ -1,0 +1,9 @@
+{
+  "id": "kla_043",
+  "equipment": "overlay metrology tool",
+  "topic": "uptime optimization",
+  "severity": "medium",
+  "instruction": "Provide a KLA field-ready response for overlay metrology tool covering uptime optimization.",
+  "context": "Site=Fab-2, Shift=2, AlarmCode=KLA-1043, Severity=medium.",
+  "response": "For overlay metrology tool, start with safety lockout and verify alarm KLA-1043. Then execute the standard uptime optimization checklist, capture before/after metrics, and escalate to tier-2 if recovery exceeds 30 minutes."
+}

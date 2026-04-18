@@ -1,0 +1,30 @@
+[
+  {
+    "experiment": "set_a",
+    "dataset_version": "kla-v1",
+    "delta": 0.041,
+    "baseline_eval": {
+      "avg_overlap_score": 0.61
+    },
+    "tuned_eval": {
+      "avg_overlap_score": 0.651
+    },
+    "fine_tune_job": {
+      "fine_tuned_model": "ft:gpt-4.1-mini:set_a"
+    }
+  },
+  {
+    "experiment": "set_b",
+    "dataset_version": "kla-v2",
+    "delta": 0.072,
+    "baseline_eval": {
+      "avg_overlap_score": 0.61
+    },
+    "tuned_eval": {
+      "avg_overlap_score": 0.682
+    },
+    "fine_tune_job": {
+      "fine_tuned_model": "ft:gpt-4.1-mini:set_b"
+    }
+  }
+]

@@ -1,0 +1,9 @@
+{
+  "id": "kla_036",
+  "equipment": "reticle inspection platform",
+  "topic": "spare parts planning",
+  "severity": "low",
+  "instruction": "Provide a KLA field-ready response for reticle inspection platform covering spare parts planning.",
+  "context": "Site=Fab-2, Shift=1, AlarmCode=KLA-1036, Severity=low.",
+  "response": "For reticle inspection platform, start with safety lockout and verify alarm KLA-1036. Then execute the standard spare parts planning checklist, capture before/after metrics, and escalate to tier-2 if recovery exceeds 30 minutes."
+}

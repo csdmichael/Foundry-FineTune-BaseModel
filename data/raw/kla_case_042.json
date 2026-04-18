@@ -1,0 +1,9 @@
+{
+  "id": "kla_042",
+  "equipment": "defect review station",
+  "topic": "recipe tuning",
+  "severity": "low",
+  "instruction": "Provide a KLA field-ready response for defect review station covering recipe tuning.",
+  "context": "Site=Fab-1, Shift=1, AlarmCode=KLA-1042, Severity=low.",
+  "response": "For defect review station, start with safety lockout and verify alarm KLA-1042. Then execute the standard recipe tuning checklist, capture before/after metrics, and escalate to tier-2 if recovery exceeds 30 minutes."
+}

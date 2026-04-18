@@ -1,0 +1,9 @@
+{
+  "id": "kla_080",
+  "equipment": "wafer inspection system",
+  "topic": "preventive maintenance",
+  "severity": "high",
+  "instruction": "Provide a KLA field-ready response for wafer inspection system covering preventive maintenance.",
+  "context": "Site=Fab-4, Shift=3, AlarmCode=KLA-1080, Severity=high.",
+  "response": "For wafer inspection system, start with safety lockout and verify alarm KLA-1080. Then execute the standard preventive maintenance checklist, capture before/after metrics, and escalate to tier-2 if recovery exceeds 30 minutes."
+}

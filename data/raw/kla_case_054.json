@@ -1,0 +1,9 @@
+{
+  "id": "kla_054",
+  "equipment": "e-beam inspection module",
+  "topic": "alarm recovery",
+  "severity": "low",
+  "instruction": "Provide a KLA field-ready response for e-beam inspection module covering alarm recovery.",
+  "context": "Site=Fab-6, Shift=1, AlarmCode=KLA-1054, Severity=low.",
+  "response": "For e-beam inspection module, start with safety lockout and verify alarm KLA-1054. Then execute the standard alarm recovery checklist, capture before/after metrics, and escalate to tier-2 if recovery exceeds 30 minutes."
+}

@@ -1,0 +1,8 @@
+{
+  "name": "set_a",
+  "dataset_version": "kla-v1",
+  "description": "Maintenance + troubleshooting heavy dataset",
+  "train_blob": "datasets/set_a/train.jsonl",
+  "validation_blob": "datasets/set_a/validation.jsonl",
+  "evaluation_blob": "datasets/set_a/eval.jsonl"
+}
